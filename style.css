@@ -1,0 +1,265 @@
+html{
+	font-size: 1.6rem;
+	color: black;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+@font-face {
+	font-family: "pokemon";
+	src: url('Pokemon Solid.ttf');
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+	font-size: 2rem;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: "pokemon";
+}
+
+h2{
+	font-size: 1rem;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: "pokemon";
+	text-align: center;
+}
+
+p{
+	font-size: 20px;
+}
+
+header{
+	background-color: black;
+	border-bottom: 1px solid black;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo{
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img{
+	display: block;
+}
+
+.menu{
+	display: inline-block;
+    vertical-align: middle;
+    float: right;
+}
+
+.menu a{
+	background: black; 
+	line-height: 50px;
+	text-decoration: none;
+	color: white;
+	font-family: "pokemon";
+	border-radius: 5px;
+}
+
+.menu a:hover {
+	background: #3A5CA8; 
+	color: #FFCB05;
+	
+}
+
+
+a, .recherche{
+	margin-right: 1rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.liste img{
+	width: 100%;
+	margin-top: 50px;
+}
+
+.blocks{
+	margin-top: 2rem;
+	text-align: center;
+	border-top: 1px solid black;
+}
+
+.block{
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pokeimg{
+	text-align: center;
+	position: relative;
+}
+
+.pokemonimg{
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	/*transform: translateX(-125%);*/
+	top: 20px;
+}
+
+.pokeball{
+	z-index: 1;
+}
+
+.description h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: "pokemon";
+	/*border: 1px solid #FF1C1C;*/
+	/*border-radius: 10px;*/
+}
+
+.description p{
+	font-size: 20px;
+}
+
+.planform{
+	display: inline-block;
+	width: 100%;
+	border-top: 1px solid black;
+}
+
+.plan{
+	border-right: 1px solid black;
+	box-sizing: border-box;
+	width: 50%;
+	display: inline-block;
+}
+
+.iplan{
+	width: 90%;
+	height: 400px;
+}
+
+.form{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.col2 input, .col1 input{
+	margin-left: 3%;
+	width: 100%;
+	padding-top: 2%;
+	margin-top: 3%;
+}
+
+.col2{
+	display: flex;
+	width: 100%;
+}
+
+.col1{
+	width: 100%;
+}
+
+.envoyer{
+	float: right;
+}
+
+footer{
+	width: 100%;
+	border-top: 1px solid black;
+	font-family: "pokemon";
+	text-align: right;
+}
+
+
+@media screen and (max-width: 800px){
+	.logo{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.logo img{
+		display: inline;
+	}
+
+	.menu{
+		display: block;
+		float: none;
+		text-align: center;
+		position: relative;
+	}
+
+	header{
+		line-height: 0px;
+		padding-bottom: 40px;
+	}
+
+	.block{
+		width: 50%;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.menu{
+		display: none;
+		text-align: center;
+		z-index: 2;
+	}
+
+	.liste img{
+		z-index : 1;
+		position: relative;
+	}
+
+	.block{
+		width: 100%;
+		display: inline-block;
+	}
+
+	.plan{
+		width: 100%;
+		border-right: none;
+	}
+
+	.form{
+		width: 100%;
+		border-top: 1px solid black;
+		display: inline-block;
+	}
+
+	.contentMenu{
+		display: block;
+		position: relative;
+		background-color: black;
+		z-index: 3;
+	}
+
+	.contentMenu a{
+		float: right;
+		text-align: right;
+		padding-right: 10px;
+    	padding-top: 5px;
+	}
+
+
+	.menu a{
+		width: 100%;
+		line-height: 60px;
+	}
+
+	.recherche{
+		margin-top: 20px;
+	}
+
+	
+}
